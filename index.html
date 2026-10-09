@@ -70,8 +70,9 @@
   .about .steps{list-style:none;padding:0;margin:1.5rem 0 0;border-top:1px solid #6b645b}
   .about .steps li{padding:.7rem 0;border-bottom:1px solid #6b645b}
   .about .steps strong{font-family:"Roboto Slab",Georgia,serif;color:var(--light)}
-  .about-figure{margin:0;border:1px solid var(--light);min-height:320px;display:flex;align-items:flex-end;padding:1rem}
-  .about-figure figcaption{font-size:.9rem;color:#D6CDB9}
+  .about-figure{margin:0;border:1px solid var(--light);min-height:320px;display:flex;align-items:flex-end;padding:0;position:relative;overflow:hidden}
+  .about-figure img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;min-height:320px}
+  .about-figure figcaption{font-size:.9rem;color:#D6CDB9;position:relative;background:rgba(43,40,37,.72);padding:1rem;width:100%}
 
   /* Gallery */
   .gallery{max-width:1240px;margin:0 auto;padding:3rem 1.25rem}
@@ -132,7 +133,7 @@
       <p class="meta">Local and independent, not a franchise. 5-star rating from 2 reviews.</p>
     </div>
     <div class="hero-photo">
-      <img src="https://pixabay.com/get/g957763ea4304465e436a82090bc2570d5ce1631773307f47d4863bb9522fabe44eb71f2b6b2799901b25140616e6b3dc7023cb2330bb8ed1545a969b2a265641_1280.jpg" alt="Farmhouse exterior repair in Indiana" data-photo-slot="hero" data-photo-query="farmhouse exterior repair Indiana">
+      <img src="https://pixabay.com/get/g299c1f3c120f96942dd66f5259c0c82abfa6613381b218d37c294a3c0e22c655adb5f1ca325497d2dc9971c099df9d2e8e7b141c1a6d869d3d580200ff2fa6fa_1280.jpg" alt="Farmhouse exterior repair in Indiana" data-photo-slot="hero" data-photo-query="farmhouse exterior repair Indiana">
     </div>
   </section>
 
@@ -169,7 +170,7 @@
 
   <section id="roof" class="band flip anchor-note" data-section="service-2" aria-labelledby="s2-title">
     <div class="photo">
-      <img src="https://pixabay.com/get/g86819994c13ca15f24df378049d1ca426a58204265217ffb2e3a2677430aa3bc98a024b84c9293fe7c93403b31c526853e0f3b20ab93c08c1fa168ef3d695bf5_1280.jpg" alt="Roofing and siding repair on a house" data-photo-slot="service-2" data-photo-query="roofing siding repair house">
+      <img src="https://images.pexels.com/photos/11953905/pexels-photo-11953905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Roofing and siding repair on a house" data-photo-slot="service-2" data-photo-query="roofing siding repair house">
     </div>
     <div class="text">
       <p class="eyebrow">Service record: roofing &amp; siding</p>
@@ -186,7 +187,7 @@
 
   <section id="deck" class="band anchor-note" data-section="service-3" aria-labelledby="s3-title">
     <div class="photo">
-      <img src="https://images.pexels.com/photos/6474507/pexels-photo-6474507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Deck and porch construction and repair" data-photo-slot="service-3" data-photo-query="deck porch construction repair">
+      <img src="https://images.pexels.com/photos/12172496/pexels-photo-12172496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Deck and porch construction and repair" data-photo-slot="service-3" data-photo-query="deck porch construction repair">
     </div>
     <div class="text">
       <p class="eyebrow">Service record: decks &amp; porches</p>
@@ -211,8 +212,9 @@
           <li><strong>Fix:</strong> You get a straight quote for the work that's actually needed.</li>
         </ul>
       </div>
-      <figure class="about-figure" data-photo-slot="about" data-photo-query="local contractor portrait rural Indiana" aria-label="Photo placeholder: local contractor portrait, rural Indiana">
-        <figcaption>Photo of the House Doctor Pros crew coming soon.</figcaption>
+      <figure class="about-figure" data-photo-slot="about" data-photo-query="local contractor portrait rural Indiana" aria-label="Photo: local contractor, rural Indiana">
+        <img src="https://pixabay.com/get/g4dedcb1d678176c8003635ec39674be95b1dbfc2d04dcc449c6072e7e56e31ac57ced2e0c64a5fc74c7f3930072a978c92ee295dc66995828c9722b7eeac22b8_1280.jpg" alt="House Doctor Pros contractor on the job in rural Indiana">
+        <figcaption>The House Doctor Pros crew, on the job.</figcaption>
       </figure>
     </div>
   </section>
@@ -223,7 +225,7 @@
     <p class="eyebrow">Recent work</p>
     <h2 id="gallery-title">Finished and Standing Strong</h2>
     <figure>
-      <img src="https://images.pexels.com/photos/8482551/pexels-photo-8482551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Finished home exterior repair on a rural property" data-photo-slot="gallery" data-photo-query="finished home exterior repair rural property">
+      <img src="https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Finished home exterior repair on a rural property" data-photo-slot="gallery" data-photo-query="finished home exterior repair rural property">
       <figcaption>Exterior repair work for rural homeowners around Wheatfield and Jasper County</figcaption>
     </figure>
   </section>
