@@ -2,268 +2,397 @@
 <html lang="en">
 <head>
 <meta name="robots" content="noindex, nofollow">
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>House Doctor Pros | Honest Home Repair in Wheatfield, Indiana</title>
-<meta name="description" content="House Doctor Pros: diagnose-first home repair, roofing, siding, decks and storm damage repair for Wheatfield and Jasper County, Indiana. Call (219) 690-8191 for a free house checkup.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700;800&family=Inter:wght@400;600&display=swap">
+<title>House Doctor Pros | General Contractor in Wheatfield, Indiana</title>
+<meta name="description" content="House Doctor Pros is a Wheatfield, Indiana general contractor who finds the real cause of a home's problem before fixing it. Call for a free diagnosis.">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#C9BE9E;
-    --light:#EFE8D8;
-    --char:#2B2825;
-    --red:#9C3B2E;
-    --redtext:#7E2C21;
-    --tan:#C9BE9E;
+  *, *::before, *::after { box-sizing: border-box; border-radius: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #FFFFFF;
+    color: #22201D;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
   }
-  *{box-sizing:border-box;border-radius:0}
-  html{scroll-behavior:auto}
-  body{margin:0;background:var(--paper);color:var(--char);font-family:"Inter",Arial,sans-serif;font-size:1.0625rem;line-height:1.7}
-  img{display:block;max-width:100%}
-  a{color:inherit}
-  h1,h2,h3{font-family:"Roboto Slab",Georgia,serif;font-weight:800;line-height:1.1;margin:0}
-  .eyebrow{font-family:"Roboto Slab",Georgia,serif;font-weight:700;font-variant:small-caps;text-transform:lowercase;letter-spacing:.08em;font-size:1.05rem;color:var(--redtext);margin:0 0 .6rem}
-  .btn{display:inline-block;background:var(--red);color:var(--light);font-family:"Roboto Slab",Georgia,serif;font-weight:700;font-size:1.1rem;text-decoration:none;padding:.95rem 1.5rem;border:2px solid var(--red);transition:background-color 100ms linear,border-color 100ms linear}
-  .btn:hover,.btn:focus-visible{background:var(--char);border-color:var(--light)}
-  .rule{border:0;border-top:1px solid var(--char);margin:0}
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  h1, h2, h3, .btn {
+    font-family: 'Roboto Slab', Rockwell, Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  h3 { letter-spacing: 0.06em; }
+  .wrap { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 12px; top: 12px; background: #fff; padding: 8px 12px; z-index: 10; }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background: #8C2F1B;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 16px 22px;
+    border: 2px solid #8C2F1B;
+  }
+  .btn:hover, .btn:focus-visible { background: #FFFFFF; color: #8C2F1B; }
+  .btn:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 2px; }
 
   /* Top bar */
-  .topbar{background:var(--char);color:var(--light);border-bottom:1px solid #4a4540}
-  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.7rem 1.25rem;max-width:1240px;margin:0 auto;flex-wrap:wrap}
-  .brandmark{font-family:"Roboto Slab",Georgia,serif;font-weight:800;font-size:1.1rem;text-decoration:none;letter-spacing:.02em}
-  .topbar a.tel{font-weight:600;text-decoration:none}
+  .topbar {
+    background: #2E3B40;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+  }
+  .topbar .wrap {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+    gap: 6px 16px; padding-top: 10px; padding-bottom: 10px;
+  }
+  .topbar .brand {
+    font-family: 'Roboto Slab', Rockwell, Georgia, serif;
+    text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700;
+  }
+  .topbar a { text-decoration: none; font-weight: 600; }
 
   /* Hero */
-  .hero{background:var(--char);color:var(--light);display:grid;grid-template-columns:1fr}
-  .hero-text{padding:3rem 1.25rem 3rem}
-  .hero .kicker{display:inline-block;background:var(--red);color:var(--light);font-family:"Roboto Slab",Georgia,serif;font-weight:700;letter-spacing:.14em;font-size:.85rem;padding:.35rem .7rem;margin-bottom:1.25rem}
-  .hero h1{font-size:clamp(2.6rem,9vw,5rem);color:var(--light)}
-  .hero .sub{font-size:1.15rem;max-width:34ch;margin:1.25rem 0 2rem;color:#E2DACA}
-  .hero .meta{margin-top:1.5rem;font-size:.95rem;color:#D6CDB9}
-  .hero-photo{min-height:320px;background:#3a3632}
-  .hero-photo img{width:100%;height:100%;object-fit:cover;min-height:320px}
+  .hero {
+    position: relative;
+    min-height: 86vh;
+    display: flex; align-items: flex-end;
+    color: #FFFFFF;
+    overflow: hidden;
+    background: #2E3B40;
+  }
+  .hero img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; background: rgba(46, 59, 64, 0.4);
+  }
+  .hero .wrap { position: relative; z-index: 1; padding-top: 120px; padding-bottom: 56px; }
+  .hero h1 {
+    margin: 0 0 14px;
+    font-size: clamp(2.6rem, 11vw, 6rem);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  }
+  .hero .sub {
+    margin: 0 0 28px;
+    font-size: clamp(1.1rem, 2.6vw, 1.35rem);
+    max-width: 40ch;
+    font-weight: 500;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.45);
+  }
+  .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+  .hero-cta .phone {
+    font-size: 1.3rem; font-weight: 600; text-decoration: none;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.45);
+  }
 
-  /* Chart chips */
-  .chart{padding:2rem 1.25rem;max-width:1240px;margin:0 auto}
-  .chart p{margin:0 0 1rem;font-family:"Roboto Slab",Georgia,serif;font-weight:700;font-size:1.05rem}
-  .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
-  .chips a{display:block;background:var(--red);color:var(--light);border:1px solid var(--char);font-family:"Roboto Slab",Georgia,serif;font-weight:700;letter-spacing:.12em;font-size:.9rem;padding:.55rem 1rem;text-decoration:none;transition:background-color 100ms linear}
-  .chips a:hover,.chips a:focus-visible{background:var(--char)}
+  /* Stats */
+  .stats { border-bottom: 1px solid #4A6670; }
+  .stats ul {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: 1fr;
+  }
+  .stats li { padding: 26px 0; text-align: center; }
+  .stats li + li { border-top: 1px solid #4A6670; }
+  .stats .big {
+    display: block;
+    font-family: 'Roboto Slab', Rockwell, Georgia, serif;
+    font-size: 1.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em;
+    color: #2E3B40;
+  }
+  .stats .small { color: #6B4A32; font-weight: 500; }
+  .stars { color: #8C2F1B; letter-spacing: 0.12em; }
 
-  /* Bands */
-  .band{display:grid;grid-template-columns:1fr;max-width:1240px;margin:0 auto}
-  .band .photo img{width:100%;height:100%;min-height:280px;object-fit:cover}
-  .band .text{padding:2.75rem 1.25rem}
-  .band h2{font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:1rem}
-  .band p{margin:0 0 1rem;max-width:56ch}
-  .checklist{list-style:none;padding:0;margin:1.25rem 0 0;border-top:1px solid var(--char)}
-  .checklist li{padding:.55rem 0;border-bottom:1px solid var(--char);font-weight:600}
-  .checklist li span{color:var(--redtext);font-family:"Roboto Slab",Georgia,serif;font-weight:700;margin-right:.5rem}
-  .anchor-note{scroll-margin-top:1rem}
+  /* Section heads */
+  .section { padding: 64px 0; }
+  .section h2 { font-size: clamp(1.8rem, 5vw, 2.8rem); margin: 0 0 12px; color: #2E3B40; }
+  .lede { margin: 0 0 36px; max-width: 62ch; color: #22201D; }
+  .kicker { color: #6B4A32; font-weight: 600; margin: 0 0 8px; }
 
-  /* About */
-  .about{background:var(--char);color:var(--light)}
-  .about .inner{display:grid;grid-template-columns:1fr;gap:2rem;max-width:1240px;margin:0 auto;padding:3.5rem 1.25rem}
-  .about .eyebrow{color:#E08A7C}
-  .about h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:1.25rem}
-  .about p{max-width:58ch;margin:0 0 1rem;color:#E2DACA}
-  .about .steps{list-style:none;padding:0;margin:1.5rem 0 0;border-top:1px solid #6b645b}
-  .about .steps li{padding:.7rem 0;border-bottom:1px solid #6b645b}
-  .about .steps strong{font-family:"Roboto Slab",Georgia,serif;color:var(--light)}
-  .about-figure{margin:0;border:1px solid var(--light);min-height:320px;display:flex;align-items:flex-end;padding:0;position:relative;overflow:hidden}
-  .about-figure img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;min-height:320px}
-  .about-figure figcaption{font-size:.9rem;color:#D6CDB9;position:relative;background:rgba(43,40,37,.72);padding:1rem;width:100%}
+  /* Diagnosis -> Prescription */
+  .dx { border: 1px solid #C9C2B5; }
+  .dx-head { display: none; }
+  .dx-row { display: grid; grid-template-columns: 1fr; }
+  .dx-row + .dx-row { border-top: 1px solid #C9C2B5; }
+  .dx-symptom {
+    background: #FFFFFF;
+    padding: 20px 20px 14px;
+  }
+  .dx-symptom h3 {
+    margin: 0; font-size: 1.15rem; color: #22201D;
+    border-left: 3px solid #8C2F1B; padding-left: 14px;
+  }
+  .dx-fix { background: #E8EEF0; padding: 16px 20px 20px; }
+  .dx-fix p { margin: 0; }
+  .dx-label {
+    display: block; font-size: 0.8rem; font-weight: 600; color: #4A6670;
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;
+  }
 
-  /* Gallery */
-  .gallery{max-width:1240px;margin:0 auto;padding:3rem 1.25rem}
-  .gallery h2{font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:1.5rem}
-  .gallery img{width:100%;max-height:640px;object-fit:cover}
-  .gallery figure{margin:0}
-  .gallery figcaption{font-variant:small-caps;text-transform:lowercase;letter-spacing:.1em;font-weight:600;font-size:1.02rem;padding:.8rem 0 0;border-bottom:1px solid var(--char);padding-bottom:.8rem}
+  /* Steel panel */
+  .steel { background: #4A6670; color: #FFFFFF; }
+  .steel h2 { color: #FFFFFF; }
+  .steel .kicker { color: #E8EEF0; }
+  .steel-grid { display: grid; gap: 32px; }
+  .steel ul { list-style: none; margin: 0; padding: 0; }
+  .steel li { padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.45); }
+  .steel li:last-child { border-bottom: 1px solid rgba(255,255,255,0.45); }
+  .steel li strong {
+    display: block;
+    font-family: 'Roboto Slab', Rockwell, Georgia, serif;
+    text-transform: uppercase; letter-spacing: 0.08em; font-size: 1.05rem; margin-bottom: 4px;
+  }
+  .steel p { margin: 0 0 16px; }
 
-  /* CTA strip */
-  .cta{max-width:1240px;margin:0 auto;padding:3rem 1.25rem;display:grid;gap:1.25rem}
-  .cta h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-  .cta p{margin:0;max-width:56ch}
+  /* Services */
+  .services-intro { padding-bottom: 32px; }
+  .svc { padding: 40px 0; }
+  .svc:nth-child(odd) { background: #FFFFFF; }
+  .svc:nth-child(even) { background: #E8EEF0; }
+  .svc .wrap { display: grid; gap: 22px; align-items: center; }
+  .svc figure { margin: 0; border: 1px solid #C9C2B5; background: #C9C2B5; }
+  .svc img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .svc h3 { margin: 0 0 10px; font-size: clamp(1.35rem, 3.6vw, 1.9rem); color: #2E3B40; }
+  .svc p { margin: 0; max-width: 46ch; }
+  .svc .tag { color: #6B4A32; font-weight: 600; font-size: 0.95rem; margin-top: 12px; }
+
+  /* Call band */
+  .callband { border-top: 1px solid #C9C2B5; padding: 56px 0; text-align: left; }
+  .callband h2 { color: #2E3B40; font-size: clamp(1.6rem, 4.5vw, 2.4rem); margin: 0 0 12px; }
+  .callband p { margin: 0 0 24px; max-width: 58ch; }
 
   /* Footer */
-  footer{background:var(--char);color:var(--light)}
-  footer .inner{max-width:1240px;margin:0 auto;padding:3rem 1.25rem 2rem;display:grid;gap:2rem}
-  footer h2{font-size:1.6rem;margin-bottom:.75rem}
-  footer p{margin:0 0 .5rem;color:#E2DACA}
-  footer a.tel{font-weight:600;color:var(--light)}
-  footer .fine{border-top:1px solid #6b645b;padding-top:1.25rem;font-size:.9rem;color:#CFC6B2}
+  footer { background: #2E3B40; color: #FFFFFF; padding: 56px 0 28px; }
+  .foot-grid { display: grid; gap: 28px; }
+  footer h2 { font-size: 1.5rem; margin: 0 0 10px; color: #FFFFFF; }
+  footer p, footer address { margin: 0 0 8px; font-style: normal; }
+  footer a { text-decoration: none; }
+  footer .phone-lg { font-size: 1.4rem; font-weight: 600; }
+  .foot-bottom {
+    margin-top: 40px; padding-top: 18px; border-top: 1px solid #4A6670;
+    font-size: 0.9rem; color: #E8EEF0;
+    display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between;
+  }
+  footer .btn:hover, footer .btn:focus-visible { background: #FFFFFF; color: #8C2F1B; }
 
-  @media (min-width:860px){
-    .hero{grid-template-columns:1fr 1fr;min-height:560px}
-    .hero-text{padding:5rem 3rem 5rem max(2rem,calc((100vw - 1240px)/2 + 2rem));display:flex;flex-direction:column;justify-content:center}
-    .hero-photo,.hero-photo img{min-height:100%}
-    .chart{padding:2rem 2rem;display:flex;align-items:center;gap:2rem}
-    .chart p{margin:0;white-space:nowrap}
-    .band{grid-template-columns:1fr 1fr;align-items:stretch}
-    .band .text{padding:4rem 3rem;align-self:center}
-    .band.flip .photo{order:2}
-    .band .photo img{min-height:460px}
-    .about .inner{grid-template-columns:1.2fr 1fr;padding:5rem 2rem;align-items:stretch}
-    .gallery{padding:4rem 2rem}
-    .cta{grid-template-columns:2fr 1fr;align-items:center;padding:4rem 2rem}
-    .cta .btn{justify-self:start}
-    footer .inner{grid-template-columns:1.2fr 1fr 1fr;padding:4rem 2rem 2rem}
-    footer .fine{grid-column:1/-1}
+  @media (min-width: 760px) {
+    .wrap { padding: 0 32px; }
+    .stats ul { grid-template-columns: repeat(3, 1fr); }
+    .stats li { padding: 34px 16px; }
+    .stats li + li { border-top: 0; border-left: 1px solid #4A6670; }
+    .section { padding: 88px 0; }
+    .dx-head {
+      display: grid; grid-template-columns: 1fr 1.3fr; border-bottom: 1px solid #C9C2B5;
+    }
+    .dx-head div {
+      font-family: 'Roboto Slab', Rockwell, Georgia, serif; text-transform: uppercase;
+      letter-spacing: 0.1em; font-weight: 700; padding: 14px 24px; font-size: 0.95rem;
+    }
+    .dx-head div:first-child { background: #FFFFFF; color: #8C2F1B; }
+    .dx-head div:last-child { background: #E8EEF0; color: #4A6670; }
+    .dx-row { grid-template-columns: 1fr 1.3fr; }
+    .dx-symptom { padding: 24px; display: flex; align-items: center; }
+    .dx-fix { padding: 24px; }
+    .dx-label { display: none; }
+    .steel-grid { grid-template-columns: 1fr 1fr; gap: 56px; }
+    .svc { padding: 56px 0; }
+    .svc .wrap { grid-template-columns: 1.1fr 1fr; gap: 48px; }
+    .svc:nth-child(even) figure { order: 2; }
+    .foot-grid { grid-template-columns: 1.2fr 1fr 1fr; align-items: start; }
   }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="topbar">
+<div class="topbar">
   <div class="wrap">
-    <a class="brandmark" href="#top">House Doctor Pros</a>
-    <a class="tel" href="tel:+12196908191">(219) 690-8191</a>
+    <span class="brand">House Doctor Pros</span>
+    <a href="tel:+12196908191">Call 1-219-690-8191</a>
+  </div>
+</div>
+
+<header class="hero">
+  <img src="https://pixabay.com/get/g299c1f3c120f96942dd66f5259c0c82abfa6613381b218d37c294a3c0e22c655adb5f1ca325497d2dc9971c099df9d2e8e7b141c1a6d869d3d580200ff2fa6fa_1280.jpg" alt="Rural farmhouse and barn exterior near Wheatfield, Indiana" data-photo-query="rural Indiana farmhouse and barn exterior">
+  <div class="wrap">
+    <h1>House Doctor Pros</h1>
+    <p class="sub">We find what's really wrong with your house, then we fix it right. No patch jobs.</p>
+    <div class="hero-cta">
+      <a class="btn" href="tel:+12196908191">Call for a Free Diagnosis</a>
+      <a class="phone" href="tel:+12196908191">12196908191</a>
+    </div>
   </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-  <section class="hero" data-section="hero" aria-labelledby="hero-title">
-    <div class="hero-text">
-      <span class="kicker">FREE HOUSE CHECKUP</span>
-      <h1 id="hero-title">House Doctor Pros</h1>
-      <p class="sub">Honest diagnosis before any quote. Home repair, roofing, siding, decks and storm repair for Wheatfield and Jasper County homes.</p>
-      <div><a class="btn" href="tel:+12196908191">Call (219) 690-8191</a></div>
-      <p class="meta">Local and independent, not a franchise. 5-star rating from 2 reviews.</p>
-    </div>
-    <div class="hero-photo">
-      <img src="https://pixabay.com/get/g299c1f3c120f96942dd66f5259c0c82abfa6613381b218d37c294a3c0e22c655adb5f1ca325497d2dc9971c099df9d2e8e7b141c1a6d869d3d580200ff2fa6fa_1280.jpg" alt="Farmhouse exterior repair in Indiana" data-photo-slot="hero" data-photo-query="farmhouse exterior repair Indiana">
-    </div>
-  </section>
-
-  <nav class="chart" aria-label="Diagnostic chart: jump to a problem area">
-    <p>Where does it hurt?</p>
-    <ul class="chips">
-      <li><a href="#roof">ROOF</a></li>
-      <li><a href="#siding">SIDING</a></li>
-      <li><a href="#deck">DECK</a></li>
-      <li><a href="#foundation">FOUNDATION</a></li>
-      <li><a href="#storm">STORM</a></li>
-    </ul>
-  </nav>
-
-  <hr class="rule">
-
-  <section id="repairs" class="band" data-section="service-1" aria-labelledby="s1-title">
-    <div class="photo">
-      <img src="https://images.pexels.com/photos/37499256/pexels-photo-37499256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Home renovation carpenter working" data-photo-slot="service-1" data-photo-query="home renovation carpenter working">
-    </div>
-    <div class="text">
-      <p class="eyebrow">Service record: repairs &amp; renovations</p>
-      <h2 id="s1-title">Home Repairs, Remodels &amp; Additions</h2>
-      <p>Older farmhouses settle, shift and wear in their own ways. We find the root cause first, whether it's a sagging floor, a sticking door or a crack in the foundation, then fix what's actually wrong.</p>
-      <p>Need more room? We handle additions and remodels too, built to match the house you already have.</p>
-      <ul class="checklist">
-        <li id="foundation" class="anchor-note"><span>Foundation</span>Settling, cracks and the problems they cause upstairs</li>
-        <li><span>Handyman</span>General maintenance and the small jobs that add up</li>
+  <section class="stats" aria-label="Why neighbors trust us">
+    <div class="wrap">
+      <ul>
+        <li><span class="big"><span class="stars" aria-hidden="true">★★★★★</span> 5.0</span><span class="small">Perfect 5-star rating</span></li>
+        <li><span class="big">2 Reviews</span><span class="small">From real local clients</span></li>
+        <li><span class="big">Wheatfield, IN</span><span class="small">Local to Jasper &amp; Newton County</span></li>
       </ul>
     </div>
   </section>
 
-  <hr class="rule">
+  <section class="section" aria-labelledby="dx-title">
+    <div class="wrap">
+      <p class="kicker">Tell us the symptom. We'll find the cause.</p>
+      <h2 id="dx-title">Diagnosis → Prescription</h2>
+      <p class="lede">A sagging porch is rarely just a porch problem. Before we pick up a tool, we track the trouble back to where it starts, so the repair holds through the next Indiana winter instead of just covering it up.</p>
 
-  <section id="roof" class="band flip anchor-note" data-section="service-2" aria-labelledby="s2-title">
-    <div class="photo">
-      <img src="https://images.pexels.com/photos/11953905/pexels-photo-11953905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Roofing and siding repair on a house" data-photo-slot="service-2" data-photo-query="roofing siding repair house">
-    </div>
-    <div class="text">
-      <p class="eyebrow">Service record: roofing &amp; siding</p>
-      <h2 id="s2-title">Roofing, Siding &amp; Storm Damage</h2>
-      <p>Open country means wind, hail and hard winters. We look at where water is getting in and why before we talk about replacing anything. Sometimes a repair is all you need, and we'll tell you so.</p>
-      <ul class="checklist">
-        <li id="siding" class="anchor-note"><span>Siding</span>Loose, cracked or storm-torn panels repaired or replaced</li>
-        <li id="storm" class="anchor-note"><span>Storm</span>Wind and weather damage assessed and fixed</li>
-      </ul>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section id="deck" class="band anchor-note" data-section="service-3" aria-labelledby="s3-title">
-    <div class="photo">
-      <img src="https://images.pexels.com/photos/12172496/pexels-photo-12172496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Deck and porch construction and repair" data-photo-slot="service-3" data-photo-query="deck porch construction repair">
-    </div>
-    <div class="text">
-      <p class="eyebrow">Service record: decks &amp; porches</p>
-      <h2 id="s3-title">Decks &amp; Porches</h2>
-      <p>A soft board or a wobbly railing usually points to something underneath. We check the framing, posts and footings, then repair or rebuild so your porch is solid for years of sitting out.</p>
-      <p>New builds and repairs, sized right for your place.</p>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section class="about" data-section="about" aria-labelledby="about-title">
-    <div class="inner">
-      <div>
-        <p class="eyebrow">About House Doctor Pros</p>
-        <h2 id="about-title">Honest Diagnosis First</h2>
-        <p>A good doctor examines you before writing a prescription. We treat your house the same way. Every job starts with a checkup so we can tell you the truth about what's wrong and what it takes to fix it.</p>
-        <p>No sales pitch, no upsell. Just practical, honest fixes from a local, independent operator who works on homes across Wheatfield and the farm communities of Jasper County.</p>
-        <ul class="steps">
-          <li><strong>Look:</strong> We come out and inspect the problem in person.</li>
-          <li><strong>Explain:</strong> We tell you plainly what's causing it.</li>
-          <li><strong>Fix:</strong> You get a straight quote for the work that's actually needed.</li>
-        </ul>
+      <div class="dx" role="table" aria-label="Common home problems and how we fix them">
+        <div class="dx-head" role="row">
+          <div role="columnheader">The Symptom</div>
+          <div role="columnheader">The Fix</div>
+        </div>
+        <div class="dx-row" role="row">
+          <div class="dx-symptom" role="cell"><h3>Sagging porch</h3></div>
+          <div class="dx-fix" role="cell"><span class="dx-label">The fix</span><p>We check footings, posts, and beams for rot or settling, then shore up or replace the structure that's actually failing before rebuilding the deck and trim.</p></div>
+        </div>
+        <div class="dx-row" role="row">
+          <div class="dx-symptom" role="cell"><h3>Drafty windows</h3></div>
+          <div class="dx-fix" role="cell"><span class="dx-label">The fix</span><p>We find where the air is getting in, whether that's the sash, the frame, or the wall around it, and reseal, repair, or replace so the heat stays inside.</p></div>
+        </div>
+        <div class="dx-row" role="row">
+          <div class="dx-symptom" role="cell"><h3>Storm-damaged siding</h3></div>
+          <div class="dx-fix" role="cell"><span class="dx-label">The fix</span><p>We pull back the damage to inspect the sheathing and wrap underneath, fix any water intrusion, and install siding that matches and stands up to the wind.</p></div>
+        </div>
+        <div class="dx-row" role="row">
+          <div class="dx-symptom" role="cell"><h3>Cracked foundation</h3></div>
+          <div class="dx-fix" role="cell"><span class="dx-label">The fix</span><p>We look at drainage, soil, and load to see why it cracked, then make the structural repair and correct the cause so it doesn't come right back.</p></div>
+        </div>
+        <div class="dx-row" role="row">
+          <div class="dx-symptom" role="cell"><h3>Leaky roof</h3></div>
+          <div class="dx-fix" role="cell"><span class="dx-label">The fix</span><p>We trace the leak to its true source, which is often flashing or decking rather than the stain on the ceiling, and repair the roof and any hidden water damage.</p></div>
+        </div>
       </div>
-      <figure class="about-figure" data-photo-slot="about" data-photo-query="local contractor portrait rural Indiana" aria-label="Photo: local contractor, rural Indiana">
-        <img src="https://pixabay.com/get/g4dedcb1d678176c8003635ec39674be95b1dbfc2d04dcc449c6072e7e56e31ac57ced2e0c64a5fc74c7f3930072a978c92ee295dc66995828c9722b7eeac22b8_1280.jpg" alt="House Doctor Pros contractor on the job in rural Indiana">
-        <figcaption>The House Doctor Pros crew, on the job.</figcaption>
-      </figure>
     </div>
   </section>
 
-  <hr class="rule">
-
-  <section class="gallery" data-section="gallery" aria-labelledby="gallery-title">
-    <p class="eyebrow">Recent work</p>
-    <h2 id="gallery-title">Finished and Standing Strong</h2>
-    <figure>
-      <img src="https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Finished home exterior repair on a rural property" data-photo-slot="gallery" data-photo-query="finished home exterior repair rural property">
-      <figcaption>Exterior repair work for rural homeowners around Wheatfield and Jasper County</figcaption>
-    </figure>
+  <section class="section steel" aria-labelledby="about-title">
+    <div class="wrap steel-grid">
+      <div>
+        <p class="kicker">Who you're calling</p>
+        <h2 id="about-title">A Neighbor Who Knows Houses</h2>
+        <p>House Doctor Pros is a general contractor serving Wheatfield and the farm towns around Jasper and Newton County. Plenty of homes out here are older farmhouses and rural properties that need honest, thorough work, not a quick cosmetic fix.</p>
+        <p>When you call, you get personal attention from a small operation, not a faceless crew. We'll tell you straight what's wrong and exactly how we'll fix it.</p>
+      </div>
+      <ul>
+        <li><strong>Older farmhouse restoration</strong>Respect for how these homes were built, and the know-how to keep them standing.</li>
+        <li><strong>Root-cause repair</strong>We diagnose the real problem first, so you're not paying to fix the same thing twice.</li>
+        <li><strong>Storm &amp; weather repair</strong>Wind, hail, and hard winters are part of rural Indiana. We repair what they leave behind.</li>
+      </ul>
+    </div>
   </section>
 
-  <hr class="rule">
-
-  <section class="cta" aria-labelledby="cta-title">
-    <div>
-      <h2 id="cta-title">Book a free house checkup.</h2>
-      <p>Tell us what's going on. We'll come take a look, explain what we find, and give you an honest estimate.</p>
+  <section aria-labelledby="svc-title">
+    <div class="section services-intro">
+      <div class="wrap">
+        <p class="kicker">What we do</p>
+        <h2 id="svc-title">Services</h2>
+        <p class="lede" style="margin-bottom:0">From a squeaky stair to a full addition, every job starts the same way: find the cause, then make the fix.</p>
+      </div>
     </div>
-    <a class="btn" href="tel:+12196908191">Call (219) 690-8191</a>
+
+    <div class="svc-list">
+      <article class="svc">
+        <div class="wrap">
+          <figure><img src="https://images.pexels.com/photos/37499256/pexels-photo-37499256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contractor doing home repair and remodeling in a rural Indiana house" data-photo-query="contractor home repair and remodeling rural Indiana house" loading="lazy"></figure>
+          <div>
+            <h3>General Home Repair &amp; Remodeling</h3>
+            <p>Kitchens, baths, floors, walls, and everything in between. We fix what's broken and update what's worn, built to last in a working rural home.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="wrap">
+          <figure><img src="https://images.pexels.com/photos/11953905/pexels-photo-11953905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Structural and storm damage repair on a farmhouse in rural Indiana" data-photo-query="structural storm damage repair farmhouse rural Indiana" loading="lazy"></figure>
+          <div>
+            <h3>Structural &amp; Storm Damage Repair</h3>
+            <p>Sagging framing, settling foundations, and storm damage to roofs and walls. We find the weak point and make the house sound again.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="wrap">
+          <figure><img src="https://images.pexels.com/photos/12172496/pexels-photo-12172496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Home addition and renovation framing on a rural Indiana property" data-photo-query="home addition renovation framing rural Indiana property" loading="lazy"></figure>
+          <div>
+            <h3>Additions &amp; Renovations</h3>
+            <p>More room for the family or a fresh layout for an older home. We plan it so the new work ties in cleanly with the house you already have.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="wrap">
+          <figure><img src="https://pixabay.com/get/g4dedcb1d678176c8003635ec39674be95b1dbfc2d04dcc449c6072e7e56e31ac57ced2e0c64a5fc74c7f3930072a978c92ee295dc66995828c9722b7eeac22b8_1280.jpg" alt="Siding, roofing, and exterior work on a country home in Indiana" data-photo-query="siding roofing exterior work country home Indiana" loading="lazy"></figure>
+          <div>
+            <h3>Siding, Roofing &amp; Exterior Work</h3>
+            <p>Your home's first defense against Indiana weather. We repair and replace siding, roofing, and trim, and check what's underneath while we're at it.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="wrap">
+          <figure><img src="https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Handyman maintenance work with tools at a rural Indiana home" data-photo-query="handyman maintenance tools rural Indiana home" loading="lazy"></figure>
+          <div>
+            <h3>Handyman &amp; Maintenance Services</h3>
+            <p>The small jobs that keep big problems away: doors, trim, fixtures, and seasonal upkeep. Catching it early is the cheapest fix there is.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="callband" aria-labelledby="call-title">
+    <div class="wrap">
+      <h2 id="call-title">Something Not Right With Your House?</h2>
+      <p>Describe the symptom over the phone. We'll come take a look, tell you what's causing it, and give you a free diagnosis and estimate.</p>
+      <a class="btn" href="tel:+12196908191">Call for a Free Diagnosis</a>
+    </div>
   </section>
 
 </main>
 
-<hr class="rule">
-
 <footer>
-  <div class="inner">
-    <div>
-      <h2>House Doctor Pros</h2>
-      <p>Diagnose-first home repair and renovation for Wheatfield and Jasper County, Indiana.</p>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>House Doctor Pros</h2>
+        <p>General contractor serving Wheatfield and the surrounding Jasper and Newton County area.</p>
+      </div>
+      <div>
+        <address>
+          14150 N 200 W<br>
+          Wheatfield, IN 46392
+        </address>
+        <p><a class="phone-lg" href="tel:+12196908191">1-219-690-8191</a></p>
+      </div>
+      <div>
+        <a class="btn" href="tel:+12196908191">Call for a Free Diagnosis</a>
+      </div>
     </div>
-    <div>
-      <p><strong>Address</strong><br>14150 N 200 W<br>Wheatfield, IN 46392</p>
-      <p><strong>Phone</strong><br><a class="tel" href="tel:+12196908191">(219) 690-8191</a></p>
-    </div>
-    <div>
-      <p>Free in-person checkup and repair estimate.</p>
-      <a class="btn" href="tel:+12196908191">Call for a Checkup</a>
-    </div>
-    <div class="fine">
-      <p>&copy; 2026 House Doctor Pros. Serving Wheatfield and surrounding Jasper County communities.</p>
-      <p>Website sample by Wild Card Creative Co</p>
+    <div class="foot-bottom">
+      <span>© 2026 House Doctor Pros. Wheatfield, Indiana.</span>
+      <span>Website sample by Wild Card Creative Co</span>
     </div>
   </div>
 </footer>
-
 </body>
 </html>
